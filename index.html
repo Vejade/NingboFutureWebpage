@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en" data-page-node-id="5gVd26G0aaZJvhavZHRiHU">
+<head data-page-node-id="HjH4CHEZzr6K89o3nHPM8Q">
+<meta charset="UTF-8" data-page-node-id="tHA3Qbqxkapr8a8TAp8c1p">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="ycPfen0wF1ttP8CJhK6tSr">
+<title>Ningbo Future — Making a Better Life</title>
+<meta name="description" content="Ningbo Future: founded 2003, 400+ employees worldwide. OEM/ODM houseware solutions, own brands LINKLIFE, Bonbon, Jake&Julia, ecovie, Greemotion." data-page-node-id="gF2OiE9qXG8JWfxUMRKK7d">
+<link rel="icon" href="assets/logo.png" data-page-node-id="0VHUpA0hlqauDWNKG0A11z">
+<link rel="preconnect" href="https://fonts.googleapis.com" data-page-node-id="Tigx3og36iuEqbIlhKsHU7">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin data-page-node-id="qwviltvk0sncPooi9XEMok">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" data-page-node-id="ukr3RVOG9sJGY3SSrjuCtv">
+<style>
+/* ============================================================
+   Swiss International Style overhaul
+   - strict grid & spacing scale (base 8)
+   - hairline rules instead of shadows / rounded corners
+   - flush-left, ragged-right typography
+   - limited palette: navy / red / ink / white
+   ============================================================ */
+:root{
+  --navy:#002B55; --navy-2:#0A3A6E; --red:#C5231D; --ink:#17233B; --muted:#5B6B82;
+  --bg:#FFFFFF; --soft:#F4F7FB; --line:#D8E0EA;
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:48px; --s6:64px; --s7:96px; --s8:128px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins','Noto Sans SC',-apple-system,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;font-feature-settings:"tnum"}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+section{padding:var(--s7) 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--red);margin-bottom:var(--s3)}
+.kicker::before{content:"";width:40px;height:2px;background:var(--red)}
+h2{font-size:clamp(30px,4.2vw,46px);font-weight:600;color:var(--navy);line-height:1.08;letter-spacing:-.015em;margin-bottom:var(--s3);max-width:760px}
+.lead{color:var(--muted);font-size:17px;max-width:640px;font-weight:300}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.2,.65,.3,1),transform .7s cubic-bezier(.2,.65,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- nav ---------- */
+nav{position:fixed;inset:0 0 auto;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1180px;margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;gap:34px}
+.nav-in img{height:32px;width:auto}
+.nav-links{display:flex;gap:28px;margin-left:auto;font-size:12.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.nav-links a{position:relative;padding:6px 0;transition:color .25s}
+.nav-links a:hover{color:var(--navy)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--red);transition:width .3s}
+.nav-links a:hover::after{width:100%}
+.nav-cta{margin-left:8px;background:var(--navy);color:#fff!important;padding:10px 22px;font-weight:500;transition:.25s}
+.nav-cta:hover{background:var(--red)}
+.nav-cta::after{display:none}
+@media(max-width:900px){.nav-links{display:none}}
+
+/* ---------- hero ---------- */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:var(--navy)}
+.hero-bg{position:absolute;inset:0;background:url('assets/hero-bg.jpg') center/cover;opacity:.5}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(120deg,rgba(0,43,85,.94) 0%,rgba(0,43,85,.72) 46%,rgba(0,43,85,.25) 100%)}
+.hero-in{position:relative;z-index:2;padding:160px 0 120px;color:#fff}
+.hero-logo{height:76px;width:auto;margin-bottom:var(--s5)}
+.hero h1{font-size:clamp(44px,7.4vw,96px);font-weight:600;line-height:1.02;letter-spacing:-.02em;max-width:860px}
+.hero h1 em{font-style:normal;color:#FFB4AE}
+.hero p{margin-top:var(--s3);font-size:clamp(17px,2vw,20px);font-weight:300;color:rgba(255,255,255,.85);max-width:520px}
+.hero-cta{margin-top:var(--s5);display:flex;gap:var(--s2);flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 32px;font-weight:500;font-size:13px;letter-spacing:.12em;text-transform:uppercase;transition:.25s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:#a81d17}
+.btn-ghost{border:1px solid rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.hero-scroll{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.6);font-size:11px;letter-spacing:.28em;text-transform:uppercase;z-index:2;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translate(-50%,8px)}}
+
+/* ---------- about ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;margin-top:var(--s6);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.stat{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px 26px;transition:background .3s}
+.stat:hover{background:var(--soft)}
+.stat b{display:block;font-size:36px;font-weight:600;color:var(--navy);line-height:1.05;letter-spacing:-.01em}
+.stat b span{color:var(--red)}
+.stat i{display:block;font-style:normal;margin-top:10px;color:var(--muted);font-size:13.5px}
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--s6);align-items:center}
+.about-grid figure{border:1px solid var(--line)}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:36px}}
+
+/* ---------- timeline ---------- */
+.tl{margin-top:var(--s6);position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:var(--s3)}
+.tl::before{content:"";position:absolute;top:8px;left:0;right:0;height:1px;background:var(--ink)}
+.tl-item{position:relative;padding-top:38px}
+.tl-item::before{content:"";position:absolute;top:0;left:0;width:16px;height:16px;background:var(--red)}
+.tl-item b{font-size:26px;font-weight:600;color:var(--navy);letter-spacing:-.01em}
+.tl-item p{margin-top:8px;font-size:13.5px;color:var(--muted)}
+.tl-note{margin-top:var(--s6);background:var(--navy);color:#fff;padding:40px 44px;display:flex;gap:30px;align-items:center;flex-wrap:wrap}
+.tl-note p{flex:1;min-width:260px;font-size:clamp(20px,2.6vw,28px);font-weight:500;letter-spacing:-.01em}
+.tl-tags{display:flex;gap:10px;flex-wrap:wrap}
+.tl-tags span{border:1px solid rgba(255,255,255,.45);padding:8px 18px;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase}
+@media(max-width:860px){.tl{grid-template-columns:1fr;gap:34px}.tl::before{display:none}}
+
+/* ---------- facilities / markets ---------- */
+.soft{background:var(--soft)}
+.fac-grid{display:grid;grid-template-columns:1fr;gap:var(--s5);margin-top:var(--s5)}
+.fac-grid figure{border:1px solid var(--line)}
+.chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.chip{background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 24px;font-weight:500;color:var(--navy);display:flex;align-items:center;gap:14px;transition:background .3s}
+.chip:hover{background:var(--soft)}
+.chip::before{content:"";width:8px;height:8px;background:var(--red);flex:none}
+.market-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:var(--s6);align-items:center;margin-top:var(--s4)}
+@media(max-width:860px){.market-grid{grid-template-columns:1fr}}
+.map-wrap{position:relative;border:1px solid var(--line);background:#fff;padding:var(--s3)}
+.map-wrap canvas{display:block;width:100%}
+.map-tag{position:absolute;transform:translate(-50%,-130%);text-align:center;pointer-events:none}
+.map-tag b{display:block;font-size:19px;font-weight:600;letter-spacing:-.01em;line-height:1}
+.map-tag span{display:block;margin-top:3px;font-size:10.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.legend{display:grid;gap:0;margin-top:8px;border-top:1px solid var(--line)}
+.legend div{display:flex;align-items:center;gap:14px;font-size:14.5px;padding:12px 0;border-bottom:1px solid var(--line)}
+.legend i{width:14px;height:14px;flex:none}
+.legend b{margin-left:auto;font-weight:600;color:var(--navy)}
+.cust-wall{margin-top:var(--s7)}
+.cust-wall h3{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.cust-grid{margin-top:var(--s3);display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+@media(max-width:900px){.cust-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.cust-grid{grid-template-columns:repeat(2,1fr)}}
+.cust-grid div{background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);height:80px;display:flex;align-items:center;justify-content:center;padding:8px 12px;transition:background .3s}
+.cust-grid div:hover{background:var(--soft)}
+.cust-grid img{max-height:64px;max-width:88%;width:auto;object-fit:contain}
+
+/* ---------- brands ---------- */
+.brand{display:grid;grid-template-columns:.92fr 1.08fr;gap:var(--s6);align-items:center;padding:var(--s6) 0;border-top:1px solid var(--ink)}
+.brand:first-of-type{border-top:0}
+.brand:nth-child(even){direction:rtl}
+.brand:nth-child(even)>*{direction:ltr}
+.brand-logo{height:68px;width:auto;object-fit:contain;margin-bottom:var(--s3)}
+.brand h3{font-size:24px;color:var(--navy);font-weight:600;letter-spacing:-.01em;margin-bottom:var(--s2)}
+.brand p{color:var(--muted);font-size:15px;font-weight:300}
+.brand p+p{margin-top:12px}
+.brand figure{border:1px solid var(--line);position:relative}
+.brand figure img{width:100%;height:340px;object-fit:cover}
+.brand .multi{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.brand .multi img{height:150px;width:100%;object-fit:cover}
+@media(max-width:860px){.brand{grid-template-columns:1fr;gap:28px}.brand:nth-child(even){direction:ltr}}
+
+/* ---------- value ---------- */
+.value-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;margin-top:var(--s5);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.value-card{background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:0 0 34px;transition:background .3s;position:relative}
+.value-card::before{content:"";position:absolute;top:0;left:0;width:56px;height:3px;background:var(--red);z-index:2}
+.value-card:hover{background:var(--soft)}
+.value-img{border-bottom:1px solid var(--line)}
+.value-img img{width:100%;height:190px;object-fit:cover}
+.value-card h3{color:var(--navy);font-size:18px;font-weight:600;margin:26px 30px var(--s2);letter-spacing:-.01em}
+.value-card ul{margin:0 30px}
+.value-card li{list-style:none;display:flex;gap:14px;padding:12px 0;color:var(--muted);font-size:14px;border-bottom:1px solid var(--line)}
+.value-card li:last-child{border:0}
+.value-card li>b{color:var(--red);font-weight:600;flex:none}
+.value-card li u{text-decoration:none;display:block;color:var(--navy);font-weight:500;font-size:14.5px;margin-bottom:3px}
+.inno-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;margin-top:var(--s5);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.inno{background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 24px;transition:background .3s}
+.inno:hover{background:var(--soft)}
+.inno b{color:var(--navy);font-weight:600;display:block;margin-bottom:8px}
+.inno span{color:var(--muted);font-size:14px}
+.inno-photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--s2);margin-top:var(--s4)}
+.inno-photos img{height:230px;width:100%;object-fit:cover;border:1px solid var(--line)}
+
+/* ---------- supply chain ---------- */
+.sc-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--s6);align-items:start}
+@media(max-width:860px){.sc-grid{grid-template-columns:1fr}}
+.sc-list{display:grid;gap:0;margin-top:var(--s3);border-top:1px solid var(--line)}
+.sc-list li{list-style:none;display:flex;gap:16px;color:var(--muted);font-size:15px;padding:12px 0;border-bottom:1px solid var(--line)}
+.sc-list li::before{content:"—";color:var(--red);font-weight:700;flex:none}
+table{width:100%;border-collapse:collapse;margin-top:var(--s3);font-size:14.5px;background:#fff;border:1px solid var(--line)}
+th{background:var(--navy);color:#fff;text-align:left;padding:14px 18px;font-weight:500;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase}
+td{padding:13px 18px;border-bottom:1px solid var(--line);color:var(--muted)}
+td:first-child{color:var(--navy);font-weight:500}
+tr:last-child td{border:0}
+.certs{display:flex;gap:0;margin-top:var(--s3);flex-wrap:wrap;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.certs div{background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line);width:104px;height:104px;display:flex;align-items:center;justify-content:center;padding:12px;transition:background .3s}
+.certs div:hover{background:var(--soft)}
+.certs img{max-height:76px;width:auto;object-fit:contain}
+
+/* ---------- contact ---------- */
+.contact{background:var(--navy);color:#fff;border-top:0}
+.contact h2{color:#fff}
+.contact .lead{color:rgba(255,255,255,.72)}
+.offices{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;margin-top:var(--s5);border-top:1px solid rgba(255,255,255,.22);border-left:1px solid rgba(255,255,255,.22)}
+.office{border-right:1px solid rgba(255,255,255,.22);border-bottom:1px solid rgba(255,255,255,.22);padding:26px 28px;transition:background .3s}
+.office:hover{background:rgba(255,255,255,.06)}
+.office b{display:flex;align-items:center;gap:12px;font-weight:600;font-size:15.5px}
+.office b::before{content:"";width:8px;height:8px;background:var(--red);flex:none}
+.office p{margin-top:12px;font-size:13.5px;color:rgba(255,255,255,.72);font-weight:300}
+.office a{transition:.3s}
+.office a:hover{color:#FFB4AE}
+.office p b{font-weight:600;color:#fff}
+.contact-foot{margin-top:var(--s6);padding-top:var(--s4);border-top:1px solid rgba(255,255,255,.22);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.contact-foot img{height:44px;width:auto}
+.contact-foot a.site{font-size:18px;font-weight:500;letter-spacing:.04em;border-bottom:2px solid var(--red);padding-bottom:4px;transition:.3s}
+.contact-foot a.site:hover{color:#FFB4AE}
+footer{background:#001E3D;color:rgba(255,255,255,.55);text-align:left;padding:28px;font-size:12.5px;font-weight:300;letter-spacing:.06em}
+footer .wrap{padding:0}
+</style>
+</head>
+<body data-page-node-id="e2CuT1tV30y6ExGIu1VJKC">
+
+<nav id="nav" data-page-node-id="H27CJRXxTBmE9wDQBtFcmj">
+  <div class="nav-in" data-page-node-id="MtgpL4hahqN5qUPGxlBXKU">
+    <a href="#top" data-page-node-id="VSYQoVA6Vesd8EmS1VTnUU"><img src="assets/logo.png" alt="Ningbo Future logo" data-page-node-id="aF8Q24qC79BW4Wt4x7GLKq"></a>
+    <div class="nav-links" data-page-node-id="da7MYnZho7g5xYDpq87gIb">
+      <a href="#about" data-page-node-id="je99myxxK0W7QTwOolXELL">About</a>
+      <a href="#milestones" data-page-node-id="WK9Pcy2HKmKuxGsLn3JzWI">Milestones</a>
+      <a href="#facilities" data-page-node-id="7bCUDNQ90w88gLKmnrTt9e">Facilities</a>
+      <a href="#markets" data-page-node-id="nYzMUltqweSe5lHls7PJLz">Markets</a>
+      <a href="#brands" data-page-node-id="rMCDiRhYLngY70M1eBeEpn">Brands</a>
+      <a href="#value" data-page-node-id="PopeSKqh2RxhXMh9oL4eDv">Value</a>
+      <a href="#supply" data-page-node-id="Cbx9cLLnKZv8hOtUwJhso7">Supply Chain</a>
+      <a href="#contact" class="nav-cta" data-page-node-id="71AvEDKQlf9rTwdCDNWR9q">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top" data-page-node-id="ojUSxjrXDRlos6CBhaA2Dy">
+  <div class="hero-bg" data-page-node-id="GvX7fBdiHMaE0oPoo1TWsF"></div>
+  <div class="hero-veil" data-page-node-id="9QuLgTHJDoTXWGmBxjRGnG"></div>
+  <div class="wrap hero-in" data-page-node-id="CF6VMcezsvbNBQVCvEiW1C">
+    <img class="hero-logo reveal" src="assets/logo-white.png" alt="前程股份 Ningbo Future" data-page-node-id="tLnE3xUr4UEg8QDy0VKBr6">
+    <h1 class="reveal" data-page-node-id="KtItvAxB9QUpkH9L9mY6yd">Welcome to<br data-page-node-id="GFHLDRw9u6u6taT5WtBMKZ"><em data-page-node-id="Z54Roe8gCnkaEBEho0ypGr">Ningbo Future</em></h1>
+    <p class="reveal" data-page-node-id="jFmjNHBMfEm3u5MzbReqhY">From a small start-up in 2003 to a multinational houseware corporation — making a better life, together with our partners.</p>
+    <div class="hero-cta reveal" data-page-node-id="n8mLVGztZxsCzy2DuFsgnZ">
+      <a class="btn btn-red" href="#about" data-page-node-id="Kb3yF4HrrtQQF0NVryCyNa">Discover Who We Are</a>
+      <a class="btn btn-ghost" href="#brands" data-page-node-id="cvAIyxmeSrZmht8q89d5Je">Explore Our Brands</a>
+    </div>
+  </div>
+  <div class="hero-scroll" data-page-node-id="53uO8fhlCHgrygDWDbtyCZ">Scroll</div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" data-page-node-id="PIFYw5COr2BHWSVqSLMY8v">
+  <div class="wrap" data-page-node-id="hNsvtlqbBVCFrDsFpMfGKJ">
+    <div class="about-grid" data-page-node-id="EBiiJVFCI2mSvmmsTOhzP0">
+      <div class="reveal" data-page-node-id="5GXxm7RAXdPbkZfpUK1yqj">
+        <span class="kicker" data-page-node-id="ZAbgBip9XMXJWbJV9ZNDTz">About Us</span>
+        <h2 data-page-node-id="V7fFv4QNyvTAyyj28d1arA">Your trusted business partner since 2003</h2>
+        <p class="lead" data-page-node-id="ZJzsg3zekpeVgZ0nefxpCs">World-class service, local insight.</p>
+        <div class="stats" data-page-node-id="6EnoKkLIvyxm0uJEo8m98t">
+          <div class="stat" data-page-node-id="MfflTp1ogksWXHku8Kzn5T"><b data-page-node-id="xTc1O68AIqH9sqbd1ol4cV">2003<span data-page-node-id="y88i6DnjEjGDB3BjJvOnlO">.</span></b><i data-page-node-id="yrVe3XAa4UQozbCreCqFQV">Founded in Ningbo, China</i></div>
+          <div class="stat" data-page-node-id="jydOqKMMNoIAtiVsVvGo7t"><b data-page-node-id="EBzlLKC6dLlE1GDJrfLYKC">400<span data-page-node-id="nY0xd1M68hh1Gkh0GViQgy">+</span></b><i data-page-node-id="jpAjTOGcgYjYKONBhD81mW">Worldwide colleagues</i></div>
+          <div class="stat" data-page-node-id="umVJqpuPtXFnDXzARCeFFd"><b data-page-node-id="4klonH62AIMjaCF6qNudKh">3<span data-page-node-id="BYPbC7YPpOrltn7dVl9uth">+</span></b><i data-page-node-id="GAxYZbQRyWupM3DYki0tkp">Service centres in LATAM, US, Germany, etc.</i></div>
+          <div class="stat" data-page-node-id="Py3B8XkFXPHVU26645yznP"><b data-page-node-id="F1B2iMcqnFzVKPmJpTtyHJ">USD 400M<span data-page-node-id="U0nyCsOMxAzOviKyr8LhLn">.</span></b><i data-page-node-id="ZyPAuGRDVK0Vr30vjEjANX">Annual turnover</i></div>
+        </div>
+      </div>
+      <figure class="reveal" data-page-node-id="sMEem5MnwZR5H2CylF2HKK"><img src="assets/about-building.jpg" alt="Ningbo Future headquarters" data-page-node-id="BbIvELTLJayHWv70R8QHR5"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- MILESTONES -->
+<section id="milestones" class="soft" data-page-node-id="By8ep8OpYUs2zdL6ISClZB">
+  <div class="wrap" data-page-node-id="MdKnOMEpc9kNgOtzt2ggBs">
+    <span class="kicker reveal" data-page-node-id="VGgQynKdPdr2iXAifSceHB">About Us – Milestones</span>
+    <h2 class="reveal" data-page-node-id="dHfs1HcgEJthMR4f0FDJTW">Two decades of steady growth</h2>
+    <div class="tl reveal" data-page-node-id="xujuStgWZNxT8L9tZZMAJ5">
+      <div class="tl-item" data-page-node-id="CBX92nmzFACUXYQ74ZYwDT"><b data-page-node-id="c0NxJMI58iar95Rc9iOwTn">2003</b><p data-page-node-id="HhYEwOqPR4p6nHwJSBlzxC">Foundation of business as an OEM business.</p></div>
+      <div class="tl-item" data-page-node-id="BWaBLBPHrSE86ovJCUoAbK"><b data-page-node-id="YS6MLo2nQwqviD2nfvq8CV">2010</b><p data-page-node-id="2XSHRBoMeb4Dwloql4Q1DK">Increasing investments into products R&amp;D — transition into ODM business.</p></div>
+      <div class="tl-item" data-page-node-id="e5fQX1a8DMSFVL9nTUccoC"><b data-page-node-id="hGqHgKLQ8dZM2ktIXIn3Nk">2011</b><p data-page-node-id="I6rHLIWP9vrqFb4iRaVg5N">Diversification into multiple categories.</p></div>
+      <div class="tl-item" data-page-node-id="oKiqpTJGNKOtD6KwzF2mih"><b data-page-node-id="UuMaVbtGOLGTzhGPiwj8As">2017</b><p data-page-node-id="cqx6kc7CHcKIrEaTWYIpEh">Globalisation of organisation through direct investment and merger.</p></div>
+      <div class="tl-item" data-page-node-id="VCtmG4OeiPWPehnEPLTeIX"><b data-page-node-id="nW3kh1rdtaquhp2aXQh0Dv">2024</b><p data-page-node-id="BAH6Z6w5WAEqhUuMFC1kCN">Entering into new markets: LATAM, MENA, and beyond.</p></div>
+    </div>
+    <div class="tl-note reveal" data-page-node-id="f3zOUYGUQGpxNMBOAWVIeI">
+      <p data-page-node-id="E9mIt35byTsSnH35j2FRYj">Delivering value to partners, driving shared growth and success.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section id="facilities" data-page-node-id="eoOgEcjylTgB5QJGAEZJYv">
+  <div class="wrap" data-page-node-id="Twm6Em5RcrwYhzEQc2VoVf">
+    <span class="kicker reveal" data-page-node-id="vnWogKC4W5rWu5Krv76QU7">About Us – Global Facilities</span>
+    <h2 class="reveal" data-page-node-id="SolBOC6zaKZ88bvqpGFmR7">Facilities across four continents</h2>
+    <div class="fac-grid reveal" data-page-node-id="1NzZbqa1bzJAzJIrJv5pSd">
+      <figure data-page-node-id="hiFwy6ORm9NGtKCDg1KBXN"><img src="assets/facilities.jpg" alt="Ningbo Future global facilities" data-page-node-id="5BRUVk6ThtqNMPV8HDIFZV"></figure>
+      <div class="chips" data-page-node-id="L7EFROID43SqMAphEtYJDF">
+        <div class="chip" data-page-node-id="cCeouhBuZDHxY4CQUjECTz">H.T.H. group (DE)</div>
+        <div class="chip" data-page-node-id="qpiRx8LsfiCfcXHut6zWvl">Linklife Australia (Pty) Ltd.</div>
+        <div class="chip" data-page-node-id="8gXKfYAj1DT1ikQhBK3xyp">Greemotion USA</div>
+        <div class="chip" data-page-node-id="FqmMK94e5MHxnRwg7Ag3IV">Out of China Sourcing Centre</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARKETS -->
+<section id="markets" class="soft" data-page-node-id="k1mwCMicsGirDCKX3BUapR">
+  <div class="wrap" data-page-node-id="DMwlUDDOw2cyFIPxOyih3V">
+    <span class="kicker reveal" data-page-node-id="xrFNcqcpPLZWL72cFYsZrl">About Us – Market Distribution</span>
+    <h2 class="reveal" data-page-node-id="MgSvyQ0ZvHiMnnwGTXzToL">Where our products go</h2>
+    <div class="market-grid" data-page-node-id="ZYOpGi2shlFe70yZokfIiu">
+      <div class="map-wrap reveal" id="mapwrap" data-page-node-id="qpsQDw6eD8EVJB5HQULbFd">
+        <canvas id="worldmap" aria-label="World map showing market distribution"></canvas>
+      </div>
+      <div class="reveal" data-page-node-id="eGltigG6vdMwUX1f1p0X7D">
+        <div class="legend" id="legend" data-page-node-id="xYMQBGEvcALfYNezjthwgk"></div>
+      </div>
+    </div>
+    <div class="cust-wall reveal" data-page-node-id="GSHD5Bv2RkgeBO3fAd8HFL">
+      <h3 data-page-node-id="bkGgL0bvOge5KpV2BxGCzp">Trusted by leading partners</h3>
+      <div class="cust-grid" data-page-node-id="XxT55eyvB2DSS7gxb9qvHb">
+        <div data-page-node-id="oo8nkqGc5gH4bA1dUWL9zA"><img src="assets/customer-9.png" alt="Carrefour" data-page-node-id="AmLV0yEZVpC7uuL0d2SXVh"></div>
+        <div><img src="assets/customer-20.svg" alt="Miniso"></div>
+        <div data-page-node-id="AoN1lNKOoZMOA1ugIo29vK"><img src="assets/customer-11.png" alt="Zwilling" data-page-node-id="SbQGnCriBUcvbws4sjGP9b"></div>
+        <div><img src="assets/customer-18.png" alt="Copec"></div>
+        <div data-page-node-id="e4brYNqOG6UZ3MsVdTA92m"><img src="assets/customer-6.png" alt="Lidl" data-page-node-id="pTV5fVIU0N2eijSgmP3OAm"></div>
+        <div><img src="assets/customer-22.svg" alt="Metro"></div>
+        <div data-page-node-id="9ijGr4Sho7pFB2A8uZCFlW"><img src="assets/customer-14.png" alt="GDN" data-page-node-id="VEk49YufBaVENCsDQx83g2"></div>
+        <div><img src="assets/customer-15.svg" alt="Nitori"></div>
+        <div data-page-node-id="qyFVXeJ7DyyppsxZ6VGU5m"><img src="assets/customer-8.png" alt="Action" data-page-node-id="1PVAYDD9ACwTJoMBz0ngb9"></div>
+        <div><img src="assets/customer-17.png" alt="Juan Valdez"></div>
+        <div data-page-node-id="qJXMT0JpKTajfWZ6GlvE2X"><img src="assets/customer-10.png" alt="Kaufland" data-page-node-id="VpuXauEA0WjqiwOtvmGV6L"></div>
+        <div><img src="assets/customer-21.svg" alt="Agata Meble"></div>
+        <div data-page-node-id="heWitFByXQb2kOUYZsNDVV"><img src="assets/customer-7.png" alt="Aldi Süd" data-page-node-id="HFoA74uqWtjSa1cPKn6Z48"></div>
+        <div><img src="assets/customer-19.svg" alt="Woolworths Group"></div>
+        <div data-page-node-id="cXs6nysudK8I2MECh9GaA4"><img src="assets/customer-12.png" alt="5five" data-page-node-id="Xt2TZTpkV9F2exiuTKj22Y"></div>
+        <div data-page-node-id="JaMbSxsq6h2iCklbwkphn4"><img src="assets/customer-13.png" alt="Cencosud" data-page-node-id="HZg5FafdDZZOLnonLnxC6h"></div>
+        <div><img src="assets/customer-16.jpg" alt="Rusta"></div>
+        <div data-page-node-id="PHzRfqS9hmpRPdE3jYbGYn"><img src="assets/customer-5.png" alt="Target" data-page-node-id="X6XIRDi1dxR5o7qTQBsxvj"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section id="brands" data-page-node-id="CBKWQMDNFNsJAkL34CeU4t">
+  <div class="wrap" data-page-node-id="XDWubC3H36DeX8RuSwX0f7">
+    <span class="kicker reveal" data-page-node-id="rtuSFIDb6i5n01J2aSj6iJ">Own Brands</span>
+    <h2 class="reveal" data-page-node-id="QMGkwqt5m39JK0nbUJIube">Five brands, one promise</h2>
+    <p class="lead reveal" data-page-node-id="FZgP90F1iyH6Ai63PEASFB">From OEM excellence to brands of our own — each collection carries a distinct character for a distinct way of living.</p>
+
+    <article class="brand reveal" data-page-node-id="rUaGCUlPmQCTnf8tKFYmuF">
+      <div data-page-node-id="whztuBt2u9F51rjjDZ0jeJ">
+        <img class="brand-logo" src="assets/brand-linklife-logo.png" alt="LINKLIFE" data-page-node-id="NZ1KZAqpAap3LuwgjYCsh8">
+        <h3 data-page-node-id="Ec4q2yDdunSpzxj10DmVnV">LINKLIFE® — linking life’s finest details</h3>
+        <p data-page-node-id="NVOyy8UiM0pKcDyHfbg9Yc">LINKLIFE® is Ningbo Future’s demonstration of OEM solutions. At LINKLIFE® we wish the consumer can link the finest details of their everyday life, therefore enjoying it to the fullest.</p>
+        <p data-page-node-id="LnDHyuXQP4o6PXAwoKqbXD"><strong data-page-node-id="3AnwsErUJNB2XvVM7lwPz0">L Selection®</strong> is the collection of Ningbo Future’s best-selling OEM products from the European market. At L Selection®, the MOQ is as low as 300 units. With its fashionable design and packaging, L Selection® empowers our LATAM clients with the opportunity to test the market at lowest cost and minimal risk.</p>
+      </div>
+      <figure data-page-node-id="cFjJmVWAoSBsH1PVwHqeer">
+        <img src="assets/brand-linklife-1.jpg" alt="LINKLIFE tableware collection" data-page-node-id="PlAA4uv93ijtcCEXEZCjO6">
+        <div class="multi" style="position:absolute;left:12px;right:12px;bottom:12px" data-page-node-id="2V6JpqkTxCpRb3eAaQ5YEy">
+          <img src="assets/brand-linklife-1.jpg" alt="" data-page-node-id="xiIqHjnzyqrDxedmNkbYUt">
+          <img src="assets/brand-linklife-2.jpg" alt="" data-page-node-id="WcbuqHP1ytmkjFhaGpzaEJ">
+          <img src="assets/brand-linklife-3.jpg" alt="" data-page-node-id="scxjc2s7BOReSfJuy2YEtT">
+        </div>
+      </figure>
+    </article>
+
+    <article class="brand reveal" data-page-node-id="YmKJdfliqwPnc9zaZDLG4C">
+      <div data-page-node-id="TqskAESTBXTehUgqCmoasC">
+        <img class="brand-logo" src="assets/brand-bonbon-logo.png" alt="Bonbon" data-page-node-id="cjMq1B2CV7EmMf1zerdXDq">
+        <h3 data-page-node-id="ipXF08WMLL6Ei8IerJqghX">Bonbon™ — a colourful candy jar</h3>
+        <p data-page-node-id="6HH4ew8KZOpxTH0s04H423">Bonbon™ means candy in French. We aim to build a fashionable concept collection corner with Bonbon™ — like a colourful candy jar, creating a variety of sweet flavours.</p>
+        <p data-page-node-id="f8zOkvCb9mVx5IkXgxCe0Y">It provides fun and interesting home-life products and fashionable accessories that are affordable. Bonbon™ is the way of expressing the affordable yet exquisite lifestyle to the fullest.</p>
+      </div>
+      <figure data-page-node-id="3jHiczf2BECrMDgJbqPjIG"><img src="assets/brand-bonbon.jpg" alt="Bonbon concept store" data-page-node-id="bLwt2lVM7Ai2YAeffq0ulm"></figure>
+    </article>
+
+    <article class="brand reveal" data-page-node-id="VsCUQtqYqthAcuJVUKmG8c">
+      <div data-page-node-id="eU3Z7aSyyCi6i8buASbkVg">
+        <img class="brand-logo" src="assets/brand-jakejulia-logo.png" alt="Jake and Julia" data-page-node-id="qm9Pku6halYhWlAqDbcnwF">
+        <h3 data-page-node-id="oELMJYPOBDH64NkVbNVWKD">Jake&amp;Julia® — her elegance, his twist</h3>
+        <p data-page-node-id="eneMiTzBsNQEQghYjZJsyK">Jake&amp;Julia® is the collection of decorative accessories and small furniture. Entering the world of Jake&amp;Julia®, you will experience the feeling of a warm welcome to their home — where the creative ideas from Julia have been mixed with the male influence of Jake.</p>
+        <p data-page-node-id="1TkA6vDajIzmedjZO4Zkpv">Looking at the different items, you immediately see the “signature” of Julia, elegant with her feminine expression, finding beauty and happiness in even the smallest things. Between the lines, you will find a “little” twist of Jake, rough and cool, to give a last wink. Discover their world: Julia’s favourites mixed with Jake’s favourites.</p>
+      </div>
+      <figure data-page-node-id="moKUG00PaDsL9o8qjqd8zK"><img src="assets/brand-jakejulia.jpg" alt="Jake and Julia home accessories" data-page-node-id="9SYlRJmDGGlHfhAj5bHFA6"></figure>
+    </article>
+
+    <article class="brand reveal" data-page-node-id="Dj6Z1DjhbI87xLrs5XBmsa">
+      <div data-page-node-id="gjZgR7E4EysefErFApGm7H">
+        <img class="brand-logo" src="assets/brand-ecovie-logo.png" alt="ecovie" data-page-node-id="DTNPjyIQkQTvBgUHAEGyHy">
+        <h3 data-page-node-id="z7WUbHAYtrjK3o8kOBiyt3">ecovie® — eco living, hassle-free</h3>
+        <p data-page-node-id="CcyXT7X0vjejMr76pv6z6y">ecovie® is Ningbo Future’s answer to a bright future. Healthiness and eco-friendliness shouldn’t be slogans for expensive marketing campaigns. The great cause of saving the Earth must be affordable and blend into our everyday lifestyle hassle-free.</p>
+        <p data-page-node-id="pmeI1OEAltIaE97MSlibkx">At ecovie® we invite you to take action by substituting your everyday accessories with more eco-friendly ones.</p>
+      </div>
+      <figure data-page-node-id="TxOmwOJ0hEoikbcbjAN2FX"><img src="assets/brand-ecovie.jpg" alt="ecovie eco-friendly products" data-page-node-id="dgM1mNyDpTC4ocAgEtOgCg"></figure>
+    </article>
+
+    <article class="brand reveal" data-page-node-id="cIP0SMMAFPb6DprxDGkTcA">
+      <div data-page-node-id="Sa1ID9rbA42uF6qmvMyTBl">
+        <img class="brand-logo" src="assets/brand-greemotion-logo.png" alt="Greemotion" data-page-node-id="slllwO2vvETKukwwhIIUPY">
+        <h3 data-page-node-id="AgN5BiJ4qzrqLZLdcHVq1X">Greemotion® — back to nature</h3>
+        <p data-page-node-id="t0REhB67qrHBBp244FzDvZ">Greemotion® brings the spirit of outdoor exploration into our everyday life. Guided by the beauty and miracle of nature, we design outdoor gadgets that are comfortable, stylish, and durable.</p>
+        <p data-page-node-id="iYNjAsfThfoTf0gC4foi5O">Our vision is simple — making reconnection with nature easy, comfortable, and affordable.</p>
+      </div>
+      <figure data-page-node-id="Ei7kIcaJpWjhjSiWM0p7Uv"><img src="assets/brand-greemotion.jpg" alt="Greemotion outdoor camping" data-page-node-id="Yzf5tZZU3YOuNejNVbPf9s"></figure>
+    </article>
+  </div>
+</section>
+
+<!-- VALUE -->
+<section id="value" class="soft" data-page-node-id="4arxi8ZhKzXWLtvwdin9bX">
+  <div class="wrap" data-page-node-id="BwIAwPP86XegKOvgF0QaBM">
+    <span class="kicker reveal" data-page-node-id="phsL2TdpCMbGb5RKpp8mPG">Delivering Value to Our Partnership</span>
+    <h2 class="reveal" data-page-node-id="gfOCUUd0tFzmrmwBCZNzdr">What we bring to the table</h2>
+    <div class="value-grid reveal" data-page-node-id="xDirvBmg0BVEBQoNBrZfrj">
+      <div class="value-card" data-page-node-id="gihYdBwbCyXvhOUhpTMFuc">
+        <figure class="value-img"><img src="assets/value-innovation.jpg" alt="Product design studio with houseware prototypes"></figure>
+        <h3 data-page-node-id="KAWXbRRPQfsS3RDcIHGAZz">Product Innovation</h3>
+        <ul data-page-node-id="voRsmoDrs7K3wrs0dzZyso">
+          <li data-page-node-id="61E1ZR4YVSgCn4ckQVDxEE"><b data-page-node-id="ILZHbzlDBhT38KVEVJScJR">1</b><div><u>Mature teams</u>Category-specific knowledge in every team — people who know your market and your product inside out.</div></li>
+          <li data-page-node-id="HKTPP5hEd33aV1wp1pmVAP"><b data-page-node-id="k9tqazdZ4kB0IX92aAilRq">2</b><div><u>Professional designers</u>Well equipped for end-to-end development, from first sketch to production-ready specification.</div></li>
+          <li data-page-node-id="FC24s8lBc4AEW9fmogV9Yy"><b data-page-node-id="umjYu0zv0qPidMpq8F4b0t">3</b><div><u>Innovative designs</u>Created to lead the market, not follow it — backed by trend research and in-house prototyping.</div></li>
+          <li data-page-node-id="ZQ9ctZQh9C3sVgRCL0lpXp"><b data-page-node-id="RqvrV3snvFXOq9wPc2RMUo">4</b><div><u>Comprehensive proposals</u>Making your work easier, from brief to shelf — one proposal covering design, packaging and pricing.</div></li>
+        </ul>
+      </div>
+      <div class="value-card" data-page-node-id="tnn5esU3YfIIVM4doGM0hO">
+        <figure class="value-img"><img src="assets/value-supplychain.jpg" alt="Automated warehouse and quality control"></figure>
+        <h3 data-page-node-id="5wuW46A5i02cFWc9T4pH6z">Supply Chain Management</h3>
+        <ul data-page-node-id="StMH5grNl4SPXdPDX3iqRy">
+          <li data-page-node-id="SZgNqGpY8J6YMivL5ELCrB"><b data-page-node-id="CIm0BD15BbiazxSe0ugGeU">1</b><div><u>Digital management for efficiency</u>ERP-driven processes keep management cost low and information transparent at every step.</div></li>
+          <li data-page-node-id="73B5OBTqLs2hUJZ0QZtcef"><b data-page-node-id="dnPpEI1xAyZ8FtsGLMueE5">2</b><div><u>Production management for QC</u>Standardised, audited production lines with on-site quality control before every shipment.</div></li>
+        </ul>
+      </div>
+      <div class="value-card" data-page-node-id="BdN7UFLpulCh89umVCiGgG">
+        <figure class="value-img"><img src="assets/value-logistics.jpg" alt="Container port and consolidated logistics"></figure>
+        <h3 data-page-node-id="0zo3pvlIF2YVN8e8dQxe4Q">Additional Services &amp; Values</h3>
+        <ul data-page-node-id="AAg6amTw4XFgigAlmdnTh1">
+          <li data-page-node-id="8FBOqEgu3eQ1rrWqsfnLMs"><b data-page-node-id="r9r6FvMzt135WF9ewl111e">1</b><div><u>Cost down of existing categories</u>Re-engineering materials and processes to protect your margin without compromising quality.</div></li>
+          <li data-page-node-id="d7ZArj5ok2HWupOpsswQGV"><b data-page-node-id="hNRUKfNs1bJPtMJT23qX3s">2</b><div><u>Financial instruments</u>Flexible payment and settlement options that support your cash flow as volumes grow.</div></li>
+          <li data-page-node-id="6Tz9bnfssDmKRROHxXBoLE"><b data-page-node-id="ybNU4BkeerMZyBgkjExjqw">3</b><div><u>Consolidation on logistics, shipping and warehouse</u>Multi-category orders consolidated into one shipment, with one point of contact.</div></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:88px" data-page-node-id="pWz0d0lMhInIZABw820dyC">
+      <span class="kicker reveal" data-page-node-id="nNMuziAIvSwvG3Hrx6MoXb">Product Innovation</span>
+      <h2 class="reveal" data-page-node-id="RG4Ayavk8WwYlwgdlMup5g">Designed to lead the market</h2>
+      <div class="inno-grid reveal" data-page-node-id="nwcWxWYos5Z6eE4WHu6Uii">
+        <div class="inno" data-page-node-id="ggPqws5WN8G7DyWv4qTmhW"><b data-page-node-id="UPZxivsW38uCWZP8CgNWD9">Mature teams</b><span data-page-node-id="JvrUGHtRwFUOv8FQqAhIxQ">Category-specific knowledge in every team.</span></div>
+        <div class="inno" data-page-node-id="9tD6lL0zfUODMZACg9MTuB"><b data-page-node-id="sAbfKGoKscy6LOlmaeZ37k">Professional designers</b><span data-page-node-id="MuECT7Emadxl7ds5vuwFlM">Well equipped for end-to-end development.</span></div>
+        <div class="inno" data-page-node-id="TCRnaBQ5bYuyTw5FfN1pdB"><b data-page-node-id="5HvYTyy5yV1SE4BjfVhcsx">Innovative designs</b><span data-page-node-id="drpHcAZgGaNIM1Ml1iuw5r">Created to lead the market, not follow it.</span></div>
+        <div class="inno" data-page-node-id="RhbpMwPDhNwRa5o9olWBfr"><b data-page-node-id="FnItql3hA9enUfEy0jCx8a">All-in-one proposals</b><span data-page-node-id="9hn67pkHdkGoIEIgaGJjW0">Making your work easier, from brief to shelf.</span></div>
+      </div>
+      <div class="inno-photos reveal" data-page-node-id="SZNgpX39mPEryjdezcUwvH">
+        <img src="assets/innovation-printer.jpg" alt="In-house 3D printing for prototyping" data-page-node-id="AG7k1GPNE7zC0RAT81xbuE">
+        <img src="assets/innovation-patents.jpg" alt="Patent wall and product showroom" data-page-node-id="Z23StMA9bY6c4sE9fDEdKA">
+        <img src="assets/innovation-display.jpg" alt="Display demonstration designs" data-page-node-id="POQ5psc6a9WdpMy5pHYIRh">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPLY CHAIN -->
+<section id="supply" data-page-node-id="KpS9KgQXtry0AF4RKKW1dF">
+  <div class="wrap" data-page-node-id="cp3zWziWSnNupQv0QmbfIw">
+    <div class="sc-grid" data-page-node-id="TAGo4F87xC6uRnHYmGRxv6">
+      <div class="reveal" data-page-node-id="wIJcidExD8B2jXDzhZJzK2">
+        <span class="kicker" data-page-node-id="od5AUni4Muv23oRxqzYLyD">Supply Chain Management</span>
+        <h2 data-page-node-id="Y9J3FbgnYg8ce03MRAOmhV">Capacity you can count on</h2>
+        <ul class="sc-list" data-page-node-id="FCR0O9W6OGlWs5G4eYDiDh">
+          <li data-page-node-id="3P9RLB6CPNYL2mm9BvwObC">Our factories cover our major areas of kitchen, home appliances, and packing.</li>
+          <li data-page-node-id="wQMoPzwlAXH2BfVZkyzNsk">In each of our factories, we have automatic production lines to ensure standardised production.</li>
+          <li data-page-node-id="fGmYwwtxrdFlJKMmtr2iSs">The ERP system is widely used to increase the efficiency and thus a guaranteed capacity.</li>
+          <li data-page-node-id="lprGXUVEqYIgx0JtqVHLLR">The manufacturing plants are audited and certified by ISO, BSCI, FSC, GRS, etc., meeting our customers’ need for high quality supply chain.</li>
+        </ul>
+        <div class="certs" data-page-node-id="hf685MRc6kCB3DbbybCtrD">
+          <div data-page-node-id="nZhNam0fJgN5sDhIm6sEMV"><img src="assets/cert-iso.jpg" alt="ISO 9001:2015 certified" data-page-node-id="i2DdZ7RhyPkS0L9NOEYQEL"></div>
+          <div data-page-node-id="Ihzn7sQW9R5bbb1MQehjCi"><img src="assets/cert-bsci.jpg" alt="BSCI certified" data-page-node-id="U8NePKVePfor1PI33WU8x4"></div>
+          <div data-page-node-id="8EhRECOB3ElSIXp1ysElHF"><img src="assets/cert-fsc.jpg" alt="FSC certified" data-page-node-id="zbSXGe3rWrAeL4FEXOgPOt"></div>
+          <div data-page-node-id="hhDinAjpysWr6QAIZ105fg"><img src="assets/cert-grs.jpg" alt="Global Recycled Standard certified" data-page-node-id="XAHKsmguiARSruExSdqKHp"></div>
+        </div>
+      </div>
+      <div class="reveal" data-page-node-id="KEiHEf3yj5nZgxnyEr8jPV">
+        <table data-page-node-id="RJfHOEL41Ke0vz2FcR1RKQ">
+          <thead data-page-node-id="WjLnEHqm3U6oXM0AkKpAKM"><tr data-page-node-id="dHQlKqIgCYvzCcg4P7HJ14"><th data-page-node-id="Zul59Aj7uWBtghCAKhzFtL">Core Categories</th><th data-page-node-id="iss46i7tcB8sH3D89RDX2z">Key Partners</th></tr></thead>
+          <tbody data-page-node-id="Kz0OxweUJweRJX14QyLaxV">
+            <tr data-page-node-id="iHCZxK93TRhswBYdoqLmXz"><td data-page-node-id="Zkzgu5iBFmm4qvqMEm6IHC">Kitchen Gadgets</td><td data-page-node-id="0F05geKyiG1AB6jD56K6lS">Ningbo Zhijian Gadget Co., Ltd.</td></tr>
+            <tr data-page-node-id="LhIp42awmKG0dptN0hBfg5"><td data-page-node-id="gFDQOxx7T2Th5ieGVJRglG">Cookware</td><td data-page-node-id="vak6HwSe3EAvgBrddOBU6M">Ningbo Kukiwell Kitchenware Co., Ltd.</td></tr>
+            <tr data-page-node-id="MQXXxP16I4vPcCJJuafNhb"><td data-page-node-id="sIVyzjy3OePYHivWE2SLXk">Bakeware</td><td data-page-node-id="B5av6x3963FxCHP6AOQiCZ">Zhejiang Huangtai Kitchenware Co., Ltd.</td></tr>
+            <tr data-page-node-id="7bENoCIPpzLnOZow3n2AiE"><td data-page-node-id="ClWOqNiQ1jkOqTwyUsjaGa">Glassware</td><td data-page-node-id="Vo12ZVqCnAUHr6RyczQ2hU">Anhui Deli Household Glass Co., Ltd.</td></tr>
+            <tr data-page-node-id="DCFsQ9YnoXML7ihDJ9wvE1"><td data-page-node-id="ZX6Mqx6ncTqYBu9SL2G30t">Storage</td><td data-page-node-id="C4aBcsua0by35VRfPdFnEf">Taizhou Sensheng Plastic Industry Co., Ltd.</td></tr>
+          </tbody>
+        </table>
+        <figure style="margin-top:22px;border:1px solid var(--line)" data-page-node-id="k4QLStA3c4db0fdfAf2cQU">
+          <img src="assets/supplychain-building.jpg" alt="Ningbo Future office building" data-page-node-id="jXjxqBdYKOxQVtQzP52nKn">
+        </figure>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact" data-page-node-id="AYffCsioGklwZECl2d1H1X">
+  <div class="wrap" data-page-node-id="lxZfa0GQAgMqMCHzfFwWau">
+    <span class="kicker reveal" style="color:#FFB4AE" data-page-node-id="q3GHmy324GIu4C0IBV8Oz0">Contact</span>
+    <h2 class="reveal" data-page-node-id="aNPGH8gM5LVpuw9L8Wh2ne">Making a better life!</h2>
+    <p class="lead reveal" data-page-node-id="6D63uB2JRJrn7E5uNsEmeh">Six offices around the world, one team at your service.</p>
+    <div class="offices reveal" data-page-node-id="QaEJUUcR67vyAY4BGuuwJQ">
+      <div class="office" data-page-node-id="ByccoGDAdj1GHomiUCzpVV"><b data-page-node-id="tD3UkdDVd5Z0rFEaId3yaC">Global HQ — Ningbo</b><p data-page-node-id="xM8Do2g7rVbYkqkape5P10">Building 8 in West Zone, Ningbo New Material Innovation Centre, No. 2560 Yongjiang Avenue, Ningbo, 315048, China<br>Contact: <b>Bill C.Tong</b> <a href="mailto:bill.tong@link-int.com">bill.tong@link-int.com</a></p></div>
+      <div class="office"><b>LATAM HQ — Buenos Aires</b><p>Carlos Calvo 2967, B1605, Munro, Buenos Aires, Argentina<br>Contact: <b>Lucas</b> <a href="mailto:lucas@bridgegs.com">lucas@bridgegs.com</a>; <b>Alejandro</b> <a href="mailto:alejandro@bridgegs.com">alejandro@bridgegs.com</a></p></div>
+      <div class="office" data-page-node-id="NgHJYimUePCtST0u7GaBni"><b data-page-node-id="HrxinJBOhnByXmb8MLDHgm">Hong Kong</b><p data-page-node-id="mkcXcsEFedILVHntGvMnas">Room 2508 Trend Centre, 29 Cheung Lee Street, Chai Wan, Hong Kong<br>Contact: <b>Gippy</b> <a href="mailto:gippy@link-int.com">gippy@link-int.com</a></p></div>
+      <div class="office" data-page-node-id="3iSYzVO43HyNBk266BAhk0"><b data-page-node-id="Ec0cuPcRIL6fzTLIYb4NZD">Oldham, UK</b><p data-page-node-id="QU3vYSqk6Fq1KZ5B4YEGb5">Ace Centre North, Albert Street, Oldham, Lancashire, OL8 3QL</p></div>
+      <div class="office" data-page-node-id="fiy9L4wwFpH8BT9WLnS8jz"><b data-page-node-id="y4daH2tlY93kBbK98LfjJ4">Wesel, Germany</b><p data-page-node-id="KVb5IYrimD2WzITu7BHRH3">Am Schornacker 113, D-46485, Wesel (Warehouse)</p></div>
+      <div class="office" data-page-node-id="XIpgFdkO6XSWhSLotj9H7u"><b data-page-node-id="GOvZK248HPXILoc4842GVu">Pomona, USA</b><p data-page-node-id="ttCB8kEzjsfmkMEdXl57UU">Essential Link, 1040 Walnut AVE. Pomona, CA 91766</p></div>
+    </div>
+    <div class="contact-foot reveal" data-page-node-id="cTEbSvUaf7Fufkz9uGwJ32">
+      <img src="assets/logo-white.png" alt="前程股份 Ningbo Future" data-page-node-id="xNQMtGKi7GUn9cbT1Anwfe">
+      <a class="site" href="https://ningbofuture.com" target="_blank" rel="noopener" data-page-node-id="zYoG2dwFB6XiAPGMVIBNUn">https://ningbofuture.com</a>
+    </div>
+  </div>
+</section>
+
+<footer data-page-node-id="0urGJeZjED3R0f8GpBiRev"><div class="wrap">© 2026 Ningbo Future Houseware Co., Ltd. — Making a better life!</div></footer>
+
+<script src="assets/topojson-client.min.js"></script>
+<script>
+// sticky nav
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 24), {passive:true});
+
+// scroll reveal
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// market data: [name, pct, color, lat, lon]
+const data = [
+  ['Europe', 70, '#C5231D', 52, 14], ['North America', 10, '#002B55', 40, -100],
+  ['Asia', 8, '#2E5A9C', 30, 103],
+  ['Oceania', 5, '#7A9CC6', -26, 134], ['South America', 5, '#8FA9CF', -14, -58], ['Africa', 2, '#5B6B82', 3, 20]
+];
+
+// legend
+const legend = document.getElementById('legend');
+data.forEach(([name, pct, color]) => {
+  const row = document.createElement('div');
+  row.innerHTML = `<i style="background:${color}"></i>${name}<b>${pct}%</b>`;
+  legend.appendChild(row);
+});
+
+// dotted world map (decorative infographic: land dots only, no borders)
+const mapWrap = document.getElementById('mapwrap');
+const cv = document.getElementById('worldmap');
+const ctx = cv.getContext('2d');
+const LAT_TOP = 84, LAT_BOT = -58;                 // crop Antarctica
+const px = (lat, lon, w, h) => [(lon + 180) / 360 * w, (LAT_TOP - lat) / (LAT_TOP - LAT_BOT) * h];
+let land = null;
+
+fetch('assets/world-land.json')
+  .then(r => r.json())
+  .then(t => { land = topojson.feature(t, t.objects.land); drawMap(); });
+
+let rsz;
+addEventListener('resize', () => { clearTimeout(rsz); rsz = setTimeout(drawMap, 200); });
+
+function drawMap() {
+  if (!land) return;
+  mapWrap.querySelectorAll('.map-tag').forEach(el => el.remove());
+  const w = mapWrap.clientWidth - 48;              // minus padding
+  const h = Math.round(w * (LAT_TOP - LAT_BOT) / 360);
+  const dpr = devicePixelRatio || 1;
+  cv.width = w * dpr; cv.height = h * dpr;
+  cv.style.height = h + 'px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  ctx.clearRect(0, 0, w, h);
+
+  // build projected land path
+  const path = new Path2D();
+  const addRing = ring => {
+    ring.forEach(([lon, lat], i) => {
+      const [x, y] = px(lat, lon, w, h);
+      i ? path.lineTo(x, y) : path.moveTo(x, y);
+    });
+    path.closePath();
+  };
+  land.features.forEach(f => {
+    const cs = f.geometry.coordinates;
+    (f.geometry.type === 'Polygon' ? cs : cs.flat(1)).forEach(addRing);
+  });
+
+  // land silhouette
+  ctx.fillStyle = '#D9E4F0';
+  ctx.strokeStyle = '#B7C8DB';
+  ctx.lineWidth = 0.8;
+  ctx.fill(path, 'evenodd');
+  ctx.stroke(path);
+
+  // region markers + labels
+  data.forEach(([name, pct, color, lat, lon]) => {
+    const [x, y] = px(lat, lon, w, h);
+    ctx.beginPath(); ctx.arc(x, y, 6, 0, 6.2832); ctx.fillStyle = color; ctx.fill();
+    ctx.beginPath(); ctx.arc(x, y, 10.5, 0, 6.2832); ctx.strokeStyle = color; ctx.lineWidth = 1.2; ctx.stroke();
+    const tag = document.createElement('div');
+    tag.className = 'map-tag';
+    tag.style.left = (x + 24) + 'px';
+    tag.style.top = (y + 24) + 'px';
+    tag.innerHTML = `<b style="color:${color}">${pct}%</b><span>${name}</span>`;
+    mapWrap.appendChild(tag);
+  });
+}
+</script>
+</body>
+</html>
